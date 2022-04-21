@@ -1,0 +1,85 @@
+ *{
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+
+ #googleMap{
+ 	width: 78%;
+ 	height: 657px;
+ }
+
+ .menurs{
+ 	width: 22%;
+ 	height: 657px;
+ 	float: left;
+ 	background: #fff;
+ }
+
+ .profile{
+ 	width: 100%;
+ 	height: 150px;
+ }
+
+ .image{
+ 	padding: 20px 20px 0px;
+ 	border-radius: 50%;
+ 	width: 100px;
+ }
+
+ .identitas{
+ 	padding-left: 27px; 
+ 	font-size: 17px;
+ 	font-family: calibri;
+ }
+
+ .scrollbox{
+ 	margin-top: 30px;
+ 	height: 473px; 
+ 	overflow: auto; 
+ 	padding: 10px; 
+ 	width: 93%;
+ 	font-family: calibri;
+ }
+
+ .box1, .box2, .box3, .box4, .box5, .box6{
+ 	padding-bottom: 8px;
+ 	margin-bottom: 20px;
+ }
+
+ .namars{
+ 	font-size: 18px;
+ 	float: left;
+ }
+
+ .ambulan1{
+ 	padding: 2px 0px 0px 137px;
+ 	color: red;
+ }
+ .ambulan2{
+ 	padding: 2px 0px 0px 137px;
+ 	color: green;
+ }
+ .ambulan3{
+ 	padding: 2px 0px 0px 137px;
+ 	color: green;
+ }
+ .ambulan4{
+ 	padding: 2px 0px 0px 137px;
+ 	color: red;
+ }
+ .ambulan5{
+ 	padding: 2px 0px 0px 137px;
+ 	color: green;
+ }
+ .ambulan6{
+ 	padding: 2px 0px 0px 137px;
+ 	color: green;
+ }
+
+ .jarak{
+ 	clear: left;
+ }
+
+ .scrollbox hr{
+ 	margin-top: 10px;
+ }
