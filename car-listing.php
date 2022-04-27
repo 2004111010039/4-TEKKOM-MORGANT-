@@ -2,7 +2,6 @@
 session_start();
 include('includes/config.php');
 error_reporting(0);
-
 ?>
 
 <!DOCTYPE HTML>
@@ -16,75 +15,47 @@ error_reporting(0);
 <title>Morgant</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="assets/css/style.css" type="text/css">  
+<!--Custome Style -->
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<!--OWL Carousel slider-->
 <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
 <link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css">
+<!--slick-slider -->
 <link href="assets/css/slick.css" rel="stylesheet">
+<!--bootstrap-slider -->
 <link href="assets/css/bootstrap-slider.min.css" rel="stylesheet">
+<!--FontAwesome Font Style -->
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
 
 
-</head>
-<body>
 
-
-        
-<!--Header-->
+<!--Header--> 
 <?php include('includes/header.php');?>
 <!-- /Header --> 
 
-<!-- Banners -->
-<section id="banner" class="banner-section">
+<!--Page Header-->
+<section class="page-header listing_page">
   <div class="container">
-    <div class="div_zindex">
-      <div class="row">
-        <div class="col-md-5 col-md-push-7">
-          <div class="banner_content">
-            <h1>Find the right service.</h1>
-        
-           <a href="#" class="btn">BOOK NOW<span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
-        </div>
+    <div class="page-header_wrap">
+      <div class="page-heading">
+        <h1>Hospital Listing</h1>
       </div>
+      <ul class="coustom-breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li>Hospital Listing</li>
+      </ul>
     </div>
   </div>
+  <!-- Dark Overlay-->
+  <div class="dark-overlay"></div>
 </section>
-<!-- /Banners --> 
+<!-- /Page Header--> 
 
-
-<!-- Resent Cat-->
-<section class="section-padding gray-bg">
-  <div class="container">
-    <div class="section-header text-center">
-      <h2>Find the Best <span>AmbulanceForYou</span></h2>
-
-    </div>
-    <div class="row"> 
-      
-
-
-<?php 
-
-$sql = "SELECT tblvehicles.VehiclesTitle,tblbrands.BrandName,tblvehicles.PricePerDay,tblvehicles.FuelType,tblvehicles.ModelYear,tblvehicles.id,tblvehicles.SeatingCapacity,tblvehicles.VehiclesOverview,tblvehicles.Vimage1 from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand";
-$query = $dbh -> prepare($sql);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
-if($query->rowCount() > 0)
-{
-foreach($results as $result)
-{  
-?>  
-
-
-<?php }}?>
-       
-   
-
-
-
-
-
+<!--Listing-->
+<div class="login-container">
+      <form action="car-listing.php"><br><br><br><br><br><br><br>
+        <img class="avatar" src="avatar.svg">
 
 <!--Back to top-->
 <div id="back-top" class="back-top"> <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i> </a> </div>
@@ -101,7 +72,6 @@ foreach($results as $result)
 
 <!--Forgot-password-Form -->
 <?php include('includes/forgotpassword.php');?>
-<!--/Forgot-password-Form --> 
 
 <!-- Scripts --> 
 <script src="assets/js/jquery.min.js"></script>
@@ -116,8 +86,4 @@ foreach($results as $result)
 <script src="assets/js/owl.carousel.min.js"></script>
 
 </body>
-
-
-
-
 </html>
